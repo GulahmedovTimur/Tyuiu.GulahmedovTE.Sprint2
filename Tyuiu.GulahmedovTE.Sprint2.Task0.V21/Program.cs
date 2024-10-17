@@ -6,7 +6,6 @@ namespace Tyuiu.GulahmedovTE.Sprint2.Task0.V21
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-
             int x = 1705;
             int y = 775;
             bool[] res = new bool[6];

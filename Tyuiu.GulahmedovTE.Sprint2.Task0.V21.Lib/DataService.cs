@@ -5,6 +5,7 @@ namespace Tyuiu.GulahmedovTE.Sprint2.Task0.V21.Lib
     {
         public bool[] GetCompareOperations(int x, int y)
         {
+
             // y = 775 x = 1705
             bool[] res = new bool[6];
             res[0] = y - 930 == x;
