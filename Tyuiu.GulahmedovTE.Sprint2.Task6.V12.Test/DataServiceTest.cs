@@ -9,15 +9,10 @@ namespace Tyuiu.GulahmedovTE.Sprint2.Task6.V12.Test
         {
             DataService ds = new DataService();
 
-            int g = 23;
-            int m = 1;
-            int n = 1;
-
-            string res = ds.FindDateOfPreviousDay(g, m, n);
-            string w = "31.12.22";
-
-
-            Assert.AreEqual(Convert.ToString(w), res);
+            Assert.AreEqual("04.04.2023", ds.FindDateOfPreviousDay(2023, 4, 5));
+            Assert.AreEqual("31.12.2021", ds.FindDateOfPreviousDay(2022, 1, 1));
+            Assert.AreEqual("10.10.2023", ds.FindDateOfPreviousDay(2023, 10, 11));
+            Assert.AreEqual("30.11.1999", ds.FindDateOfPreviousDay(1999, 12, 1));
         }
     }
 }
